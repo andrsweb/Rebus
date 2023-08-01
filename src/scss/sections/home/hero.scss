@@ -1,0 +1,117 @@
+.hero {
+	padding: 185px 0 117px;
+
+	.container {
+		max-width: 1000px;
+	}
+
+	&__subtitle {
+		color: $dark;
+		font-family: $ff;
+		font-size: 17px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 216.471%; 
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 470px;
+		display: flex;
+		flex-direction: column;
+		padding-left: 20px;
+	}
+
+	&__img {
+		display: flex;
+		justify-content: flex-end;
+
+		.hero__phone_wrapper {
+			width: 316px;
+			height: 661px;
+			position: relative;
+
+			&::before {
+				content: "";
+				display: block;
+				width: 940px;
+				height: 940px;
+				background-image: url('../img/hero/circle.svg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				position: absolute;
+				left: 40%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				z-index: -1;
+			}
+		}
+
+		.hero__phone {
+			width: 316.5px;
+			height: 661px;
+		}
+
+		.hero__circle {
+			display: none;
+			width: 999px;
+			height: 999px;
+			max-width: 180%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+		}
+	}
+
+	&__frame {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 121px;
+		height: 39px;
+		border-radius: 12px;
+		background-color: #EEF0FA;
+		color: $dark;
+		text-align: right;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		transform: rotate(-1.726deg);
+		margin-bottom: 11px;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-top: 81px;
+
+		.button {
+			margin-right: 28px;
+		}
+	}
+
+	&__link {
+		color: $link;
+		text-align: right;
+		font-family: $ff;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		text-decoration-line: underline;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+}

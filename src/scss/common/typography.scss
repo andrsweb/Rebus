@@ -11,10 +11,16 @@ h6, .h6 {
 }
 
 h1, .h1 {
+	color: #14191F;
+	font-family: Gogh;
 	font-size: 32px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 130%;
+	margin-bottom: 21px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 48px;
 	}
 }
 
@@ -50,10 +56,6 @@ a {
 	display: inline-block;
 	text-decoration: underline;
 	transition: color ease-out $tr;
-
-	&:hover {
-		text-decoration: none
-	}
 }
 
 p {
