@@ -1,0 +1,54 @@
+.header {
+	padding: 44px 0;
+
+	.container {
+		max-width: 744px;
+	}
+
+	&__wrapper {
+		padding: 7px 7px 7px 24px;
+		display: flex;
+		align-items: center;
+		background-color: $bg;
+		border-radius: 21px;
+	}
+
+	&__logo {
+		margin-right: 23px;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&__nav {
+		&_link {
+			padding: 9px 13px;
+			color: $light;
+			text-align: center;
+			font-family: Gogh;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal; 
+			text-decoration: none;
+			transition: background-color ease $tr;
+			border-radius: 11px;
+
+			&:hover {
+				background-color:  #414141;
+			}
+
+			&:active {
+				background-color: #3A3A3A;
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+}

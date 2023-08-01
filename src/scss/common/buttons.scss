@@ -1,0 +1,53 @@
+.header__button_dark {
+	border: 0;
+	padding: 9px 13px;
+	background-color: #414141;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $light;
+	text-align: center;
+	font-family: $ff;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: $fw-medium;
+	line-height: normal;
+	border-radius: 11px;
+	cursor: pointer;
+	transition: background-color ease $tr;
+
+	&:hover {
+		background-color: #515151;;
+	}
+
+	&:active {
+		background-color: #3A3A3A;
+	}
+}
+
+.header__button_white {
+	border: 0;
+	padding: 9px 16px;
+	background-color: $white;
+	color: $dark;
+	text-align: center;
+	font-family: $ff;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: $fw-medium;
+	line-height: normal;
+	border-radius: 14px;
+	cursor: pointer;
+	transition: background-color ease $tr,
+				color ease $tr;
+
+	&:hover {
+		background-color: $accent;
+		color: $white;
+	}
+
+	&:active {
+		background-color: #FF0F4E;
+		color: $white;
+	}
+}
