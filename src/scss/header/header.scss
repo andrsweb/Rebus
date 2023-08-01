@@ -1,5 +1,8 @@
 .header {
-	padding: 44px 0;
+	position: fixed;
+	left: 0;
+	top: 44px;
+	width: 100vw;
 
 	.container {
 		max-width: 744px;
