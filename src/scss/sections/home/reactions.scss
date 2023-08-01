@@ -5,11 +5,25 @@
 		max-width: 500px;
 	}
 
+	
+
 	&__items {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 20px;
+		position: relative;
+
+		#my-canvas {
+			width: 1903px;
+			height: 594px;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			z-index: -1;
+			pointer-events: none;
+			transform: translateX(-50%);
+		}
 	}
 
 	&__item {
