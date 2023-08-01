@@ -5,10 +5,11 @@
 	width: 100vw;
 
 	.container {
-		max-width: 744px;
+		max-width: 784px;
 	}
 
 	&__wrapper {
+		width: 100%;
 		padding: 7px 7px 7px 24px;
 		display: flex;
 		align-items: center;
@@ -53,5 +54,9 @@
 		display: flex;
 		align-items: center;
 		margin-left: auto;
+	}
+
+	.header__button_dark {
+		margin-right: 7px;
 	}
 }
