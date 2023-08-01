@@ -1,0 +1,32 @@
+.footer {
+	background-color: $bg;
+	padding: 12px 0;
+
+	.container {
+		max-width: 760px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__year {
+		color: #D4D4D4;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 140%;
+	}
+
+	&__buttons {
+		display: flex;
+	}
+
+	&__ui {
+		display: flex;
+		align-items: center;
+	}
+}
