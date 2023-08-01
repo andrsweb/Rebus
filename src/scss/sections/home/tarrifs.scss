@@ -1,0 +1,162 @@
+.tarrifs {
+	padding: 182px 0;
+
+	.container {
+		max-width: 1230px;
+	}
+
+	.h2 {
+		color: $dark;
+		text-align: center;
+		font-family: $ff;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 110%;
+		margin-bottom: 48px;
+	}
+
+	&__buttons {
+		width: 200px;
+		padding: 4px;
+		display: flex;
+		align-items: center;
+		border-radius: 13.5px;
+		background: #F7F7F7;
+		margin: 0 auto 30px auto;
+	}
+
+	.tarrif__tabs {
+		display: none;
+
+		&.active {
+			animation: fade 2s forwards ease;
+			display: block;
+
+			@keyframes fade {
+				0% {
+					display: none;
+					opacity: 0;
+				}
+
+				1% {
+					display: block;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.tarrif__tab_items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 12px;
+
+		.tarrif__subtitle {
+			color: $dark;
+			font-family: Gogh;
+			font-size: 18.9px;
+			font-style: normal;
+			font-weight: $fw-medium;
+			line-height: normal;
+			margin-bottom: 18px;
+		}
+
+		.h6 {
+			color: $dark;
+			font-family: $ff;
+			font-size: 26.1px;
+			font-style: normal;
+			font-weight: $fw-bold;
+			line-height: normal;
+			margin-bottom: 30px;
+		}
+
+		.tarrif__text {
+			display: flex;
+			align-items: center;
+			color: $dark;
+			font-family: $ff;
+			font-size: 17px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: 27px;
+			margin-bottom: 8px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			span {
+				font-weight: $fw-bold;
+				margin-right: 2px;
+			}
+
+			&.disabled {
+				color: #C1C6CC;
+			}
+
+			.first__img {
+				margin-right: 9px;
+			}
+
+			.last__img {
+				margin-left: 9px;
+			}
+		}
+
+		.button {
+			margin-top: 23.5px;
+			padding: 11px 18px;
+			font-size: 15px;
+			font-weight: $fw-medium;
+		}
+	}
+
+	.tarrif__tab_item {
+		padding: 0 12px;
+		width: calc(100% / 4);
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+
+		.tab__item_inner {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			padding: 23px;
+			width: 100%;
+			height: 100%;
+			background-color: #F7F7F7;
+			border-radius: 25.2px;
+			overflow: hidden;
+
+			&.popular {
+				position: relative;
+
+				&::after {
+					content: 'Популярный';
+					position: absolute;
+					right: -37px;
+					top: 28px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #DCFFDB;
+					width: 150.871px;
+					height: 24.731px;
+					color: #10B302;
+					font-family: $ff;
+					font-size: 12.6px;
+					font-style: normal;
+					font-weight: $fw-regular;
+					line-height: normal;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+}

@@ -76,3 +76,25 @@
 		background-color: #FF0F4E;
 	}
 }
+
+.tab__button {
+	border: 0;
+	color: #C1C6CC;
+	text-align: center;
+	font-family: $ff;
+	font-size: 15.3px;
+	font-style: normal;
+	font-weight: $fw-regular;
+	line-height: 110%;
+	background-color: #F7F7F7;
+	padding: 10.8px 18px;
+	border-radius: 8.1px;
+	cursor: pointer;
+	transition: background-color ease $tr,
+				box-shadow ease $tr;
+
+	&.active {
+		background: #FFF;
+		box-shadow: 0px 0.8999999761581421px 0.8999999761581421px 0px rgba(0, 0, 0, 0.06), 0px 0.8999999761581421px 7.199999809265137px 0px rgba(0, 0, 0, 0.06);		
+	}
+}
