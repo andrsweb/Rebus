@@ -5,6 +5,21 @@
 	width: 100vw;
 	z-index: 100;
 
+	&.scrolled {
+		.header__button_white {
+			background-color: $accent;
+			color: $white;
+
+			&:hover {
+				background-color: #FE4873;
+			}
+		
+			&:active {
+				background-color: #FF0F4E;
+			}
+		}
+	}
+
 	.container {
 		max-width: 784px;
 	}
