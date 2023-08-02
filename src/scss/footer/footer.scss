@@ -29,4 +29,8 @@
 		display: flex;
 		align-items: center;
 	}
+
+	.footer__lang_arr {
+		transition: transform ease $tr;
+	} 
 }

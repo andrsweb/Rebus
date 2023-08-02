@@ -115,6 +115,7 @@
 	border-radius: 10px;
 	transition: background ease $tr;
 	cursor: pointer;
+	position: relative;
 
 	&_img {
 		margin-right: 6px;
@@ -130,6 +131,85 @@
 
 	&:active {
 		background-color: #3A3A3A;
+	}
+}
+
+.footer__lang, .footer__docs {
+	.hidden__menu {
+		display: none;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		padding: 10px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: -80px;
+		background-color: $bg;
+
+		&_item {
+			display: flex;
+			cursor: pointer;
+			margin-bottom: 10px;
+			transition: opacity ease $tr,
+						color ease $tr;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	&.clicked {
+		background-color: #414141;
+		.hidden__menu {
+			display: block;
+			animation: fade 0.5s forwards ease;
+
+			@keyframes fade {
+				0% {
+					display: none;
+					opacity: 0;
+				}
+
+				1% {
+					display: block;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+
+		.footer__lang_arr {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.footer__docs {
+	.hidden__menu {
+		top: -100px;
+	}
+
+	.hidden__menu_item {
+		color: #D4D4D4;
+		text-align: center;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $fw-medium;
+		line-height: normal; 
+		text-align: left;
+
+		&:hover {
+			opacity: 1;
+			color: $accent;
+		}
 	}
 }
 

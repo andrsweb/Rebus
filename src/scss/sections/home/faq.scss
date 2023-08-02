@@ -86,9 +86,12 @@
 		}
 
 		&-link {
-			display: inline;
 			color: $link;
 			margin-top: 25px;
+
+			&:hover {
+				color: $accent;
+			}
 		}
 	}
 }
