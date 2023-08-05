@@ -75,51 +75,53 @@
 	&__img {
 		display: flex;
 		justify-content: flex-end;
+		width: 260px;
+		height: 543px;
+		position: relative;
 
-		.hero__phone_wrapper {
+		@media all and (min-width: $md) {
+			width: 220px;
+			height: 460px;
+		}
+
+		@media all and (min-width: 1024px) {
 			width: 260px;
 			height: 543px;
-			position: relative;
 
-			@media all and (min-width: $md) {
-				width: 220px;
-				height: 460px;
-			}
+			&::before {
+				content: "";
+				display: block;
+				width: 849px;
+				height: 849px;
+				background-image: url('../img/hero/circle.svg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				position: absolute;
+				left: 40%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				z-index: -1;
 
-			@media all and (min-width: 1024px) {
-				width: 260px;
-				height: 543px;
-
-				&::before {
-					content: "";
-					display: block;
-					width: 849px;
-					height: 849px;
-					background-image: url('../img/hero/circle.svg');
-					background-size: cover;
-					background-repeat: no-repeat;
-					position: absolute;
-					left: 40%;
-					top: 50%;
-					transform: translate(-50%, -50%);
-					z-index: -1;
-
-					@media all and (min-width: 1900px) {
-						width: 940px;
-						height: 940px;
-					}
+				@media all and (min-width: 1900px) {
+					width: 940px;
+					height: 940px;
 				}
 			}
+		}
 
-			@media all and (min-width: 1400px) {
-				width: 260px;
-				height: 453px;
-			}
+		@media all and (min-width: 1400px) {
+			width: 260px;
+			height: 453px;
+		}
 
-			@media all and (min-width: 1900px) {
-				width: 316px;
-				height: 661px;
-			}
+		@media all and (min-width: 1900px) {
+			width: 316px;
+			height: 661px;
+		}
+
+		.hero__phone_wrapper {
+			width: 100%;
+			height: 100vh;
 		}
 
 		.hero__circle {
