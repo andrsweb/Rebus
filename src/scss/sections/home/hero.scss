@@ -2,6 +2,10 @@
 	padding: 71px 0 117px;
 
 	@media all and (min-width: $md) {
+		padding: 117px 0 60px;
+	}
+
+	@media all and (min-width: $xl) {
 		padding: 185px 0 117px;
 	}
 
@@ -19,9 +23,14 @@
 		text-align: center;
 
 		@media all and (min-width: $md) {
+			font-size: 16px;
+			line-height: 230%;
+			text-align: left;
+		}
+
+		@media all and (min-width: $xl) {
 			font-size: 17px;
 			line-height: 216.471%;
-			text-align: left;
 		}
 	}
 
@@ -42,7 +51,7 @@
 		display: flex;
 		flex-direction: column;
 
-		@media all and (min-width: $md) {
+		@media all and (min-width: $xl) {
 			padding-left: 20px;
 		}
 	}
@@ -57,6 +66,11 @@
 			position: relative;
 
 			@media all and (min-width: $md) {
+				width: 220px;
+				height: 460px;
+			}
+
+			@media all and (min-width: $xl) {
 				width: 316px;
 				height: 661px;
 
@@ -112,10 +126,15 @@
 		@media all and (min-width: $md) {
 			font-size: 15px;
 			margin-bottom: 11px;
+			width: 116px;
+			height: 37px;
+			margin-left: 0;
+			margin-bottom: 13px;
+		}
+
+		@media all and (min-width: $xl) {
 			width: 121px;
 			height: 39px;
-			margin-left: 0;
-			margin-bottom: 0;
 		}
 	}
 
@@ -127,6 +146,11 @@
 		flex-direction: column;
 
 		@media all and (min-width: $md) {
+			margin-top: 50px;
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $xl) {
 			margin-top: 82px;
 			margin-bottom: 0;
 		}

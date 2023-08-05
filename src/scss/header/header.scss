@@ -6,9 +6,12 @@
 	z-index: 100;
 	background: $bg;
 
-
 	@media all and (min-width: $md) {
 		background-color: transparent;
+		top: 25px;
+	}
+
+	@media all and (min-width: $xl) {
 		top: 44px;
 	}
 
@@ -48,6 +51,10 @@
 		border-radius: 21px;
 
 		@media all and (min-width: $md) {
+			padding: 8px 8px 8px 20px;
+		}
+
+		@media all and (min-width: $xl) {
 			padding: 7px 7px 7px 24px;
 		}
 	}
@@ -58,6 +65,7 @@
 
 		@media all and (min-width: $md) {
 			margin-right: 23px;
+			width: 75px;
 		}
 
 		&:hover {
@@ -67,6 +75,11 @@
 
 	&__nav {
 		display: none;
+
+		@media all and (min-width: $md) {
+			display: block;
+		}
+
 		&_link {
 			padding: 9px 13px;
 			color: $light;
