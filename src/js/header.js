@@ -1,3 +1,52 @@
+document.addEventListener('DOMContentLoaded', () => {
+	'use strict'
+
+	toogleBurgerMenu()
+})
+
+
+const toogleBurgerMenu = () => {
+	const burgerButton = document.querySelector('.burger__button')
+	const headerMenu = document.querySelector('.header__nav')
+
+	burgerButton.addEventListener('click', () => {
+
+		if (!burgerButton && !headerWrapper) return
+
+		if (!headerMenu.classList.contains('opened')) {
+			headerMenu.classList.add('opened')
+			burgerButton.classList.add('opened')
+		} else {
+			headerMenu.classList.remove('opened')
+			burgerButton.classList.remove('opened')
+		}
+	})
+
+	window.addEventListener('resize', () => {        //Resize function, if window width >= 768, remove all active classes on burger menu and button
+		const windowWidth = window.innerWidth
+		const WINDOW_WIDTH_MD = 768
+
+		if (windowWidth >= WINDOW_WIDTH_MD && headerMenu.classList.contains('opened')) {
+			headerMenu.classList.remove('opened')
+			burgerButton.classList.remove('opened')
+		}
+	})
+
+	document.addEventListener( 'click', e => {
+		e.stopPropagation()
+		target = e.target
+
+		if (
+			! target.className ||
+			target.classList.contains( 'header__nav' ) ||
+			target.classList.contains( 'burger__button' )
+		) return
+
+		headerMenu.classList.remove( 'opened' )
+		burgerButton.classList.remove( 'opened' )
+	} )
+}
+
 
 document.addEventListener('scroll', () => {
 	const header = document.querySelector('.header')
