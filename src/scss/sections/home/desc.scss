@@ -1,14 +1,30 @@
 .desc {
-	padding: 60px 0;
+	padding: 88px 0;
+
+	@media all and (min-width: $md) {
+		padding: 60px 0;
+	}
+
+	.container {
+		padding: 0;
+
+		@media all and (min-width: $md) {
+			padding: 0 20px;
+		}
+	}
 
 	.h3 {
 		color: $dark;
 		font-family: $ff;
-		font-size: 24px;
+		font-size: 21px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
 		margin-bottom: 16px;
+
+		@media all and (min-width: $md) {
+			font-size: 24px;
+		}
 	}
 
 	.container {
@@ -18,11 +34,18 @@
 	&__items {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	&__item {
-		margin-bottom: 146px;
-		padding-left: 20px;
+		margin-bottom: 90px;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: auto;
+			padding-left: 20px;
+			margin-bottom: 146px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -31,43 +54,84 @@
 		&_inner {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			flex-direction: column;
+			padding-top: 30px;
+			justify-content: flex-end;
+
+			@media all and (min-width: $md) {
+				flex-direction: row;
+				padding-top: 0;
+				justify-content: space-between;
+			}
 		}
 
 		&_info {
 			max-width: 380px;
+			margin-top: 20px;
+			padding-left: 28px;
+
+			@media all and (min-width: $md) {
+				padding: 0;
+			}
 		}
 
 		&_text {
 			color: $dark;
 			font-family: $ff;
-			font-size: 17px;
+			font-size: 15px;
 			font-style: normal;
 			font-weight: $fw-regular;
-			line-height: normal; 
+			line-height: normal;
+			max-width: 300px;
+
+			@media all and (min-width: $md) {
+				font-size: 17px;
+				max-width: 100%;
+			}
 		}
 
 		&_link {
 			color: $link;
 			margin-top: 20px;
+			font-size: 15px;
 
 			&:hover {
 				color: $accent;
 			}
+
+			@media all and (min-width: $md) {
+				font-size: 17px;
+			}
 		}
 
 		&_img {
+			padding-top: 30px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			background: #EEF1FF;
+
+			@media all and (min-width: $md) {
+				padding-top: 0;
+			}
+		}
+	}
+
+	&__img_inner {
+		width: 300px;
+		height: 370px;
+		border-radius: 59.111px;
+
+		@media all and (min-width: $md) {
+			padding: 72px 72px 0 72px;
 			width: 456px;
 			height: 456px;
-			border-radius: 59.111px;
-			background: #EEF1FF;
-			padding: 72px 72px 0 72px;
+		}
 
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }

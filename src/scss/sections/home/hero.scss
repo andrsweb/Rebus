@@ -1,5 +1,9 @@
 .hero {
-	padding: 185px 0 117px;
+	padding: 71px 0 117px;
+
+	@media all and (min-width: $md) {
+		padding: 185px 0 117px;
+	}
 
 	.container {
 		max-width: 1000px;
@@ -8,16 +12,28 @@
 	&__subtitle {
 		color: $dark;
 		font-family: $ff;
-		font-size: 17px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-regular;
-		line-height: 216.471%; 
+		line-height: normal;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			font-size: 17px;
+			line-height: 216.471%;
+			text-align: left;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&__info {
@@ -25,7 +41,10 @@
 		max-width: 470px;
 		display: flex;
 		flex-direction: column;
-		padding-left: 20px;
+
+		@media all and (min-width: $md) {
+			padding-left: 20px;
+		}
 	}
 
 	&__img {
@@ -33,29 +52,29 @@
 		justify-content: flex-end;
 
 		.hero__phone_wrapper {
-			width: 316px;
-			height: 661px;
+			width: 260px;
+			height: 543px;
 			position: relative;
 
-			&::before {
-				content: "";
-				display: block;
-				width: 940px;
-				height: 940px;
-				background-image: url('../img/hero/circle.svg');
-				background-size: cover;
-				background-repeat: no-repeat;
-				position: absolute;
-				left: 40%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				z-index: -1;
-			}
-		}
+			@media all and (min-width: $md) {
+				width: 316px;
+				height: 661px;
 
-		.hero__phone {
-			width: 316.5px;
-			height: 661px;
+				&::before {
+					content: "";
+					display: block;
+					width: 940px;
+					height: 940px;
+					background-image: url('../img/hero/circle.svg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					position: absolute;
+					left: 40%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					z-index: -1;
+				}
+			}
 		}
 
 		.hero__circle {
@@ -75,28 +94,54 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 121px;
-		height: 39px;
+		width: 99px;
+		height: 36px;
 		border-radius: 12px;
 		background-color: #EEF0FA;
 		color: $dark;
 		text-align: right;
 		font-family: $ff;
-		font-size: 15px;
+		font-size: 13px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		transform: rotate(-1.726deg);
-		margin-bottom: 11px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+			margin-bottom: 11px;
+			width: 121px;
+			height: 39px;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
 	}
 
 	&__buttons {
 		display: flex;
 		align-items: center;
-		margin-top: 81px;
+		margin-top: 31px;
+		margin-bottom: 41px;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			margin-top: 82px;
+			margin-bottom: 0;
+		}
 
 		.button {
-			margin-right: 28px;
+			margin-bottom: 15px;
+
+			@media all and (min-width: $md) {
+				margin-right: 28px;
+				margin-bottom: 0;
+			}
+		}
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
 		}
 	}
 
@@ -104,11 +149,15 @@
 		color: $link;
 		text-align: right;
 		font-family: $ff;
-		font-size: 16px;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		text-decoration-line: underline;
+
+		@media all and (min-width: $md) {
+			font-size: 16px;
+		}
 
 		&:hover {
 			color: $accent;

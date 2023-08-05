@@ -1,6 +1,10 @@
 .footer {
 	background-color: $bg;
-	padding: 12px 0;
+	padding: 19px 0;
+
+	@media all and (min-width: $md) {
+		padding: 12px 0;
+	}
 
 	.container {
 		max-width: 760px;
@@ -10,6 +14,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&__year {
@@ -19,10 +28,63 @@
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: 140%;
+		order: 2;
+		margin-top: 20px;
+
+		@media all and (min-width: $md) {
+			order: 1;
+			margin-top: 0;
+		}
+	}
+
+	&__ui {
+		order: 1;
+		width: 100%;
+		display: flex;
+		justify-content: center; //
+
+		@media all and (min-width: $md) {
+			order: 2;
+			width: auto;
+		}
 	}
 
 	&__buttons {
 		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+		max-width: 300px;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			max-width: 100%;
+			width: auto;
+			align-items: center;
+		}
+
+		.footer__button {
+			order: 1;
+			@media all and (min-width: $md) {
+			}
+		}
+
+		.footer__lang  {
+			order: 2;
+			margin: 8px 0;
+
+			@media all and (min-width: $md) {
+				order: 1;
+			}
+		}
+
+		.footer__docs  {
+			order: 3;
+
+			@media all and (min-width: $md) {
+				order: 1;
+			}
+		}
 	}
 
 	&__ui {

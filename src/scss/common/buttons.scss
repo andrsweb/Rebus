@@ -1,6 +1,6 @@
 .header__button_dark {
 	border: 0;
-	padding: 9px 13px;
+	padding: 9px 11px;
 	background-color: #414141;
 	display: flex;
 	justify-content: center;
@@ -8,13 +8,12 @@
 	color: $light;
 	text-align: center;
 	font-family: $ff;
-	font-size: 15px;
+	font-size: 13px;
 	font-style: normal;
 	font-weight: $fw-medium;
-	line-height: normal;
-	border-radius: 11px;
+	line-height: 18px;
+	border-radius: 10px;
 	cursor: pointer;
-	transition: background-color ease $tr;
 
 	&:hover {
 		background-color: #515151;
@@ -23,23 +22,39 @@
 	&:active {
 		background-color: #3A3A3A;
 	}
+
+	@media all and (min-width: $md) {
+		font-size: 15px;
+		line-height: normal;
+		padding: 9px 13px;
+	}
 }
 
 .header__button_white {
+	width: 100%;
 	border: 0;
-	padding: 9px 16px;
+	padding: 9px 11px;
 	background-color: $white;
 	color: $dark;
 	text-align: center;
 	font-family: $ff;
-	font-size: 15px;
+	font-size: 13px;
 	font-style: normal;
 	font-weight: $fw-medium;
-	line-height: normal;
-	border-radius: 14px;
+	line-height: 18px;
+	border-radius: 10px;
 	cursor: pointer;
-	transition: background-color ease $tr,
-		color ease $tr;
+	max-width: 131px;
+	white-space: nowrap;
+
+	span {
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: inline;
+			border-radius: 14px;
+		}
+	}
 
 	&:hover {
 		background-color: $accent;
@@ -50,22 +65,28 @@
 		background-color: #FF0F4E;
 		color: $white;
 	}
+
+	@media all and (min-width: $md) {
+		font-size: 15px;
+		line-height: normal;
+		padding: 9px 16px;
+		max-width: 173px;
+	}
 }
 
 .button {
-	padding: 14.4px 26.4px;
+	padding: 12px 24px;
 	border: 0;
 	color: $white;
 	text-align: center;
 	font-family: $ff;
-	font-size: 16px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: $fw-bold;
 	line-height: normal;
 	cursor: pointer;
-	border-radius: 19.2px;
+	border-radius: 13px;
 	background-color: $accent;
-	transition: background-color ease $tr;
 
 	&:hover {
 		background-color: #FE4873;
@@ -74,6 +95,12 @@
 	&:active {
 		background-color: #FF0F4E;
 	}
+
+	@media all and (min-width: $md) {
+		font-size: 16px;
+		border-radius: 19.2px;
+		padding: 14.4px 26.4px;
+	}
 }
 
 .tab__button {
@@ -81,20 +108,25 @@
 	color: #C1C6CC;
 	text-align: center;
 	font-family: $ff;
-	font-size: 15.3px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: $fw-regular;
 	line-height: 110%;
 	background-color: #F7F7F7;
-	padding: 10.8px 18px;
+	padding: 7px 11px;
 	border-radius: 8.1px;
 	cursor: pointer;
-	transition: background-color ease $tr,
-				box-shadow ease $tr;
 
 	&.active {
 		background: #FFF;
-		box-shadow: 0px 0.8999999761581421px 0.8999999761581421px 0px rgba(0, 0, 0, 0.06), 0px 0.8999999761581421px 7.199999809265137px 0px rgba(0, 0, 0, 0.06);		
+		box-shadow: 0px 0.8999999761581421px 0.8999999761581421px 0px rgba(0, 0, 0, 0.06), 0px 0.8999999761581421px 7.199999809265137px 0px rgba(0, 0, 0, 0.06);
+		color: #425466;
+		font-weight: $fw-medium;
+	}
+
+	@media all and (min-width: $md) {
+		font-size: 15.3px;
+		padding: 10.8px 18px;
 	}
 }
 
@@ -105,15 +137,14 @@
 	color: #D4D4D4;
 	text-align: center;
 	font-family: $ff;
-	font-size: 15px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: $fw-medium;
 	line-height: normal; 
 	border: 0;
-	background-color: transparent;
+	background-color: #414141;
 	padding: 9px 16px;
 	border-radius: 10px;
-	transition: background ease $tr;
 	cursor: pointer;
 	position: relative;
 
@@ -132,9 +163,16 @@
 	&:active {
 		background-color: #3A3A3A;
 	}
+
+	@media all and (min-width: $md) {
+		font-size: 15px;
+		background-color: transparent;
+	}
 }
 
 .footer__lang, .footer__docs {
+	position: relative;
+
 	.hidden__menu {
 		display: none;
 		border-top-left-radius: 10px;
@@ -143,15 +181,13 @@
 		width: 100%;
 		position: absolute;
 		left: 0;
-		top: -80px;
+		top: -70px;
 		background-color: $bg;
 
 		&_item {
 			display: flex;
 			cursor: pointer;
 			margin-bottom: 10px;
-			transition: opacity ease $tr,
-						color ease $tr;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -160,6 +196,10 @@
 			&:hover {
 				opacity: $op;
 			}
+		}
+
+		@media all and (min-width: $md) {
+			top: -80px;
 		}
 	}
 
@@ -193,7 +233,11 @@
 
 .footer__docs {
 	.hidden__menu {
-		top: -100px;
+		top: -70px;
+
+		@media all and (min-width: $md) {
+			top: -100px;
+		}
 	}
 
 	.hidden__menu_item {
@@ -223,14 +267,12 @@
 	color: $white;
 	text-align: center;
 	font-family: $ff;
-	font-size: 15px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: $fw-medium;
 	line-height: normal;
 	border-radius: 14px;
 	cursor: pointer;
-	transition: background-color ease $tr;
-	margin-left: 7px;
 
 	&:hover {
 		background-color:  #73b0df;
@@ -242,5 +284,85 @@
 
 	img {
 		margin-left: 10px;
+		width: 13px;
+
+		@media all and (min-width: $md) {
+			width: 15px;
+		}
+	}
+
+	@media all and (min-width: $md) {
+		margin-left: 7px;
+		font-size: 15px;
+	}
+}
+
+.burger__button {
+	position: relative;
+	width: 18px;
+	height: 16px;
+	cursor: pointer;
+
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: $white;
+		transition: transform ease $tr;
+		border-radius: 46px;
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: $white;
+			border-radius: 46px;
+		}
+
+		&::before {
+			top: 12px;
+			width: 100%;
+			left: 0;
+		}
+
+		&::after {
+			top: 6px;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	&:hover {
+		opacity: $op;
+	}
+
+	&.opened {
+		span {
+			transform: rotate(-45deg);
+			top: 10px;
+		}
+
+		span::before {
+			opacity: 0;
+		}
+
+		span::after {
+			transform: rotate(90deg);
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	@media all and (min-width: $md) {
+		display: none;
 	}
 }

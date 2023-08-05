@@ -17,7 +17,13 @@ h1, .h1 {
 	font-style: normal;
 	font-weight: 800;
 	line-height: 130%;
-	margin-bottom: 21px;
+	margin-bottom: 12.5px;
+	text-align: center;
+
+	@media all and (min-width: $md) {
+		text-align: left;
+		margin-bottom: 21px;
+	}
 
 	@media all and (min-width: $lg) {
 		font-size: 48px;
@@ -55,7 +61,6 @@ h6, .h6 {
 a {
 	display: inline-block;
 	text-decoration: underline;
-	transition: color ease-out $tr;
 }
 
 p {

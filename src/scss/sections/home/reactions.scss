@@ -1,39 +1,47 @@
 .reactions {
-	padding: 120px 0;
+	padding: 39px 0;
+
+	@media all and (min-width: $md) {
+		padding: 120px 0;
+	}
 
 	.container {
 		max-width: 500px;
 	}
 
-	
-
 	&__items {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 20px;
-		position: relative;
+		margin-bottom: 17px;
 
-		#my-canvas {
-			width: 1903px;
-			height: 594px;
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			z-index: -1;
-			pointer-events: none;
-			transform: translateX(-50%);
+		@media all and (min-width: $md) {
+			margin-bottom: 20px;
 		}
 	}
 
 	&__item {
-		padding: 11.4px 14px; 
+		padding: 9px 11px; 
 		background-color: #F5F7FF;
 		border-radius: 12.667px;
 		margin-right: 9px;
 		cursor: pointer;
-		transition: background-color ease $tr;
+		position: relative;
 
+		@media all and (min-width: $md) {
+			padding: 11.4px 14px; 
+		}
+
+			#my-canvas {
+				width: 1920px;
+				height: 900px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				pointer-events: none;
+				z-index: 100;
+				transform: translate(-50%,-50%);
+			}
 		&:last-child {
 			margin-right: 0;
 		}
@@ -73,16 +81,25 @@
 		color: $dark;
 		text-align: center;
 		font-family: $ff;
-		font-size: 17px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal; 
 		max-width: 380px;
+
+		@media all and (min-width: $md) {
+			font-size: 17px;
+		}
 	}
 
 	&__img {
-		width: 22px;
-		height: 22px;
+		width: 17px;
+		height: 15px;
+
+		@media all and (min-width: $md) {
+			width: 22px;
+			height: 22px;
+		}
 
 		img {
 			width: 100%;
@@ -94,10 +111,14 @@
 	&__value {
 		color: #1E93FF;
 		font-family: $ff;
-		font-size: 13.933px;
+		font-size: 11px;
 		font-style: normal;
 		font-weight: $fw-medium;
 		line-height: normal;
 		margin-left: 5px;
+
+		@media all and (min-width: $md) {
+			font-size: 13.933px;
+		}
 	}
 }

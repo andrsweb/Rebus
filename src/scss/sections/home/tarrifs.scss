@@ -1,5 +1,9 @@
 .tarrifs {
-	padding: 182px 0;
+	padding: 75px 0;
+
+	@media all and (min-width: $md) {
+		padding: 182px 0;
+	}
 
 	.container {
 		max-width: 1230px;
@@ -9,70 +13,80 @@
 		color: $dark;
 		text-align: center;
 		font-family: $ff;
-		font-size: 38px;
+		font-size: 26px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 110%;
-		margin-bottom: 48px;
+		margin-bottom: 36px;
+
+		@media all and (min-width: $md) {
+			font-size: 38px;
+			margin-bottom: 48px;
+		}
 	}
 
 	&__buttons {
-		width: 200px;
+		width: 145px;
 		padding: 4px;
 		display: flex;
 		align-items: center;
 		border-radius: 13.5px;
 		background: #F7F7F7;
 		margin: 0 auto 30px auto;
+
+		@media all and (min-width: $md) {
+			width: 200px;
+		}
 	}
 
 	.tarrif__tabs {
 		display: none;
 
 		&.active {
-			animation: fade 2s forwards ease;
 			display: block;
-
-			@keyframes fade {
-				0% {
-					display: none;
-					opacity: 0;
-				}
-
-				1% {
-					display: block;
-				}
-
-				100% {
-					opacity: 1;
-				}
-			}
 		}
 	}
 
 	.tarrif__tab_items {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 12px;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			margin: 0 12px;
+			align-items: flex-start;
+		}
 
 		.tarrif__subtitle {
 			color: $dark;
 			font-family: Gogh;
-			font-size: 18.9px;
+			font-size: 18px;
 			font-style: normal;
 			font-weight: $fw-medium;
 			line-height: normal;
-			margin-bottom: 18px;
+			margin-bottom: 8px;
+
+			@media all and (min-width: $md) {
+				font-size: 18.9px;
+				margin-bottom: 18px;
+			}
 		}
 
 		.h6 {
 			color: $dark;
 			font-family: $ff;
-			font-size: 26.1px;
+			font-size: 25px;
 			font-style: normal;
 			font-weight: $fw-bold;
 			line-height: normal;
-			margin-bottom: 30px;
+			margin-bottom: 23px;
+
+			@media all and (min-width: $md) {
+				font-size: 26.1px;
+				margin-bottom: 30px;
+			}
 		}
 
 		.tarrif__text {
@@ -80,11 +94,15 @@
 			align-items: center;
 			color: $dark;
 			font-family: $ff;
-			font-size: 17px;
+			font-size: 15px;
 			font-style: normal;
 			font-weight: $fw-regular;
 			line-height: 27px;
-			margin-bottom: 8px;
+			margin-bottom: 5px;
+
+			@media all and (min-width: $md) {
+				margin-bottom: 8px;
+			}
 
 			&:last-child {
 				margin-bottom: 0;
@@ -93,6 +111,10 @@
 			span {
 				font-weight: $fw-bold;
 				margin-right: 2px;
+			}
+
+			@media all and (min-width: $md) {
+				font-size: 17px;
 			}
 
 			&.disabled {
@@ -109,19 +131,30 @@
 		}
 
 		.button {
-			margin-top: 23.5px;
+			margin-top: 17px;
 			padding: 11px 18px;
 			font-size: 15px;
 			font-weight: $fw-medium;
+
+			@media all and (min-width: $md) {
+				margin-top: 23.5px;
+			}
 		}
 	}
 
 	.tarrif__tab_item {
-		padding: 0 12px;
-		width: calc(100% / 4);
+		width: 100%;
+		max-width: 285px;
 		position: relative;
 		z-index: 2;
 		overflow: hidden;
+		padding: 10px 25px 25px 21px;
+
+		@media all and (min-width: $md) {
+			max-width: none;
+			padding: 0 12px;
+			width: calc(100% / 4);
+		}
 
 		.tab__item_inner {
 			position: relative;

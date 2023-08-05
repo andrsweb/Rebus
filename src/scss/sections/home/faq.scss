@@ -1,5 +1,9 @@
 .faq {
-	padding: 50px 0 170px;
+	padding: 75px 0;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0 170px;
+	}
 
 	.container {
 		max-width: 770px;
@@ -9,11 +13,16 @@
 		color: $dark;
 		text-align: center;
 		font-family: $ff;
-		font-size: 38px;
+		font-size: 26px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 130%;
-		margin-bottom: 90px;
+		margin-bottom: 36px;
+
+		@media all and (min-width: $md) {
+			font-size: 38px;
+			margin-bottom: 90px;
+		}
 	}
 
 	.dropdown {
@@ -41,19 +50,24 @@
 		&-start {
 			color: $dark;
 			font-family: $ff;
-			font-size: 19px;
+			font-size: 15px;
 			font-style: normal;
 			font-weight: $fw-medium;
 			line-height: normal;
-			padding-bottom: 29px;
+			padding-bottom: 19px;
 			position: relative;
+
+			@media all and (min-width: $md) {
+				font-size: 19px;
+				padding-bottom: 29px;
+			}
 			
 
 			&::after {
 				content: "";
 				display: block;
-				width: 22px;
-				height: 22px;
+				width: 18px;
+				height: 18px;
 				background-image: url('../img/ico/arrow.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -61,6 +75,11 @@
 				right: 0;
 				top: 0%;
 				transition: transform ease $tr;
+
+				@media all and (min-width: $md) {
+					width: 22px;
+					height: 22px;
+				}
 			}
 		}
 
@@ -69,7 +88,7 @@
 			height: 0;
 			display: flex;
 			flex-direction: column;
-			transition: height ease 1s;
+			transition: height ease 0.3s;
 		}
 
 		&-text {
@@ -78,11 +97,15 @@
 			align-items: flex-start;
 			color: $dark;
 			font-family: $ff;
-			font-size: 17px;
+			font-size: 14px;
 			font-style: normal;
 			font-weight: $fw-regular;
 			line-height: normal;
 			max-width: 617px;
+
+			@media all and (min-width: $md) {
+				font-size: 17px;
+			}
 		}
 
 		&-link {
