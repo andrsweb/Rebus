@@ -5,6 +5,10 @@
 		padding: 117px 0 60px;
 	}
 
+	@media all and (min-width: 1024px) {
+		padding: 165px 0 117px;
+	}
+
 	@media all and (min-width: $xl) {
 		padding: 185px 0 117px;
 	}
@@ -51,7 +55,7 @@
 		display: flex;
 		flex-direction: column;
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: 1024px) {
 			padding-left: 20px;
 		}
 	}
@@ -70,15 +74,15 @@
 				height: 460px;
 			}
 
-			@media all and (min-width: $xl) {
-				width: 316px;
-				height: 661px;
+			@media all and (min-width: 1024px) {
+				width: 260px;
+				height: 543px;
 
 				&::before {
 					content: "";
 					display: block;
-					width: 940px;
-					height: 940px;
+					width: 849px;
+					height: 849px;
 					background-image: url('../img/hero/circle.svg');
 					background-size: cover;
 					background-repeat: no-repeat;
@@ -87,7 +91,17 @@
 					top: 50%;
 					transform: translate(-50%, -50%);
 					z-index: -1;
+
+					@media all and (min-width: $xl) {
+						width: 940px;
+						height: 940px;
+					}
 				}
+			}
+
+			@media all and (min-width: $xl) {
+				width: 316px;
+				height: 661px;
 			}
 		}
 
@@ -132,7 +146,7 @@
 			margin-bottom: 13px;
 		}
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: 1024px) {
 			width: 121px;
 			height: 39px;
 		}
@@ -150,7 +164,7 @@
 			margin-bottom: 0;
 		}
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: 1024px) {
 			margin-top: 82px;
 			margin-bottom: 0;
 		}

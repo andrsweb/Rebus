@@ -7,6 +7,14 @@
 
 	.container {
 		max-width: 1230px;
+
+		@media all and (min-width: $xl) {
+			padding: 0;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 0 20px;
+		}
 	}
 
 	.h2 {
@@ -58,6 +66,15 @@
 			align-items: flex-start;
 			margin: 0 12px;
 			justify-content: center;
+			padding: 0 10%;
+		}
+
+		@media all and (min-width: 1024px) {
+			padding: 0 18%;
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 0;
 		}
 
 		@media all and (min-width: $xl) {
@@ -156,17 +173,20 @@
 		padding: 10px 25px 25px 21px;
 
 		@media all and (min-width: $md) {
-			max-width: none;
 			padding: 0 12px;
 			width: calc(100% / 2);
 			max-width: 300px;
 			margin-bottom: 30px;
 		}
 
+		@media all and (min-width: 1024px) {
+			max-width: 100%;
+		}
+
 		@media all and (min-width: $xl) {
-			max-width: none;
-			padding: 0 12px;
 			width: calc(100% / 4);
+			max-width: 100%;
+		
 			margin-bottom: 0;
 		}
 
