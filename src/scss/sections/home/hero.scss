@@ -9,8 +9,12 @@
 		padding: 165px 0 117px;
 	}
 
-	@media all and (min-width: $xl) {
-		padding: 185px 0 117px;
+	@media all and (min-width: 1400px) {
+		padding: 132px 0 117px;
+	}
+
+	@media all and (min-width: 1900px) {
+		padding: 185px 0 60px;
 	}
 
 	.container {
@@ -58,6 +62,14 @@
 		@media all and (min-width: 1024px) {
 			padding-left: 20px;
 		}
+
+		@media all and (min-width: 1400px) {
+			padding-top: 90px;
+		}
+
+		@media all and (min-width: 1900px) {
+			padding-top: 0;
+		}
 	}
 
 	&__img {
@@ -92,14 +104,19 @@
 					transform: translate(-50%, -50%);
 					z-index: -1;
 
-					@media all and (min-width: $xl) {
+					@media all and (min-width: 1900px) {
 						width: 940px;
 						height: 940px;
 					}
 				}
 			}
 
-			@media all and (min-width: $xl) {
+			@media all and (min-width: 1400px) {
+				width: 260px;
+				height: 453px;
+			}
+
+			@media all and (min-width: 1900px) {
 				width: 316px;
 				height: 661px;
 			}

@@ -5,8 +5,12 @@
 		padding: 60px 0;
 	}
 
-	@media all and (min-width: $xl) {
-		padding: 120px 0;
+	@media all and (min-width: 1400px) {
+		padding: 177px 0 65px;
+	}
+
+	@media all and (min-width: 1900px) {
+		padding: 177px 0 121px;
 	}
 
 	.container {
@@ -33,7 +37,7 @@
 		position: relative;
 
 		@media all and (min-width: $md) {
-			padding: 11.4px 14px; 
+			padding: 11.4px 14px;
 		}
 
 			#my-canvas {
