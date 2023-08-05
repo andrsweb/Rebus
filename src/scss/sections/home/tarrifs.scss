@@ -1,7 +1,7 @@
 .tarrifs {
 	padding: 75px 0;
 
-	@media all and (min-width: $md) {
+	@media all and (min-width: $xl) {
 		padding: 182px 0;
 	}
 
@@ -55,8 +55,13 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			margin: 0 12px;
 			align-items: flex-start;
+			margin: 0 12px;
+			justify-content: center;
+		}
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-start;
 		}
 
 		.tarrif__subtitle {
@@ -153,7 +158,16 @@
 		@media all and (min-width: $md) {
 			max-width: none;
 			padding: 0 12px;
+			width: calc(100% / 2);
+			max-width: 300px;
+			margin-bottom: 30px;
+		}
+
+		@media all and (min-width: $xl) {
+			max-width: none;
+			padding: 0 12px;
 			width: calc(100% / 4);
+			margin-bottom: 0;
 		}
 
 		.tab__item_inner {

@@ -2,6 +2,10 @@
 	padding: 39px 0;
 
 	@media all and (min-width: $md) {
+		padding: 60px 0;
+	}
+
+	@media all and (min-width: $xl) {
 		padding: 120px 0;
 	}
 
@@ -88,6 +92,10 @@
 		max-width: 380px;
 
 		@media all and (min-width: $md) {
+			font-size: 16px;
+		}
+
+		@media all and (min-width: $lg) {
 			font-size: 17px;
 		}
 	}
