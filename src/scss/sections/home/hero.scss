@@ -2,31 +2,83 @@
 	padding: 71px 0 117px;
 
 	@media all and (min-width: $md) {
-		padding:15.23vw 0 7.81vw; 
+		padding:15.23vw 0 7.81vw;
+
+		@media all and (min-height: 220px) {
+			padding-top: 50vh
+		}
+
+		@media all and (min-height: 320px) {
+			padding-top: 25vh
+		}
+	
+		@media all and (min-height: 420px) {
+			padding-top: 30vh
+		}
+	
+		@media all and (min-height: 480px) {
+			padding:15.23vw 0 7.81vw;
+		}
 	}
 
 	@media all and (min-width: 1024px) {
-		padding:16.11vw 0 11.43vw; 
+		padding:16.11vw 0 11.43vw;
+
+		@media all and (min-height: 220px) {
+			padding-top: 50vh
+		}
+		
+		@media all and (min-height: 320px) {
+			padding-top: 25vh
+		}
+	
+		@media all and (min-height: 420px) {
+			padding-top: 30vh
+		}
+	
+		@media all and (min-height: 480px) {
+			padding:16.11vw 0 11.43vw;
+		}
 	}
 
 	@media all and (min-width: 1400px) {
 		padding: 132px 0 117px;
+
+		@media all and (min-height: 220px) {
+			padding-top: 50vh
+		}
+
+		@media all and (min-height: 320px) {
+			padding-top: 25vh
+		}
+	
+		@media all and (min-height: 420px) {
+			padding-top: 30vh
+		}
+	
+		@media all and (min-height: 480px) {
+			padding: 132px 0 117px;
+		}
 	}
 
 	@media all and (min-width: 1900px) {
 		padding:9.17vw 0 8.13vw; 
-	}
 
-	@media all and (min-height: 320px) {
-		padding-top: 10vh
-	}
+		@media all and (min-height: 220px) {
+			padding-top: 50vh
+		}
 
-	@media all and (min-height: 420px) {
-		padding-top: 15vh
-	}
-
-	@media all and (min-height: 480px) {
-		padding-top: 20vh
+		@media all and (min-height: 320px) {
+			padding-top: 40vh
+		}
+	
+		@media all and (min-height: 420px) {
+			padding-top: 30vh
+		}
+	
+		@media all and (min-height: 480px) {
+			padding:9.17vw 0 8.13vw; 
+		}
 	}
 
 	.container {
