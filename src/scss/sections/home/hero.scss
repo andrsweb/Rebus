@@ -75,28 +75,34 @@
 	&__img {
 		display: flex;
 		justify-content: flex-end;
-		width: 260px;
-		height: 543px;
+		height: 90vh;
+		max-width: 260px;
+		min-height: 300px;
+		max-height: 543px;
 		position: relative;
 
 		@media all and (min-width: $md) {
-			width: 220px;
-			height: 460px;
+			max-width: 21.48vw;
+			min-height: 29.3vw;
+			max-height: 44.92vw;
 		}
 
 		@media all and (min-width: 1024px) {
-			width: 260px;
-			height: 543px;
+			max-width: 25.39vw;
+			min-height: 29.3vw;
+			max-height: 53.03vw;
 		}
 
-		@media all and (min-width: 1400px) {
-			width: 260px;
-			height: 453px;
+		@media all and (min-width: 1440px) {
+			max-width: 18.06vw;
+			min-height: 20.83vw;
+			max-height: 37.71vw;
 		}
 
 		@media all and (min-width: 1900px) {
-			width: 316px;
-			height: 661px;
+			max-width: 316px;
+			min-height: 400px;
+			max-height: 661px;
 		}
 
 		.hero__phone_wrapper {
@@ -110,7 +116,7 @@
 		position: absolute;
 		left: 40%;
 		top: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		width: 305%;
 		max-width: none;
 		height: auto;
