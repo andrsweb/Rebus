@@ -87,26 +87,6 @@
 		@media all and (min-width: 1024px) {
 			width: 260px;
 			height: 543px;
-
-			&::before {
-				content: "";
-				display: block;
-				width: 849px;
-				height: 849px;
-				background-image: url('../img/hero/circle.svg');
-				background-size: cover;
-				background-repeat: no-repeat;
-				position: absolute;
-				left: 40%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				z-index: -1;
-
-				@media all and (min-width: 1900px) {
-					width: 940px;
-					height: 940px;
-				}
-			}
 		}
 
 		@media all and (min-width: 1400px) {
@@ -123,17 +103,21 @@
 			width: 100%;
 			height: 100vh;
 		}
+	}
 
-		.hero__circle {
-			display: none;
-			width: 999px;
-			height: 999px;
-			max-width: 180%;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			z-index: -1;
+	&__circle {
+		display: none;
+		position: absolute;
+		left: 40%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		width: 305%;
+		max-width: none;
+		height: auto;
+		z-index: -1;
+
+		@media all and (min-width: 1024px) {
+			display: block;
 		}
 	}
 
@@ -190,10 +174,12 @@
 
 		.button {
 			margin-bottom: 15px;
+			font-weight: 500;
 
 			@media all and (min-width: $md) {
 				margin-right: 28px;
 				margin-bottom: 0;
+				font-weight: 700;
 			}
 		}
 

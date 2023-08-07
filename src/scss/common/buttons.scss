@@ -27,6 +27,7 @@
 		font-size: 15px;
 		line-height: normal;
 		padding: 9px 13px;
+		border-radius: 11px;
 	}
 }
 
@@ -52,7 +53,6 @@
 
 		@media all and (min-width: $md) {
 			display: inline;
-			border-radius: 14px;
 		}
 	}
 
@@ -71,6 +71,7 @@
 		line-height: normal;
 		padding: 9px 16px;
 		max-width: 173px;
+		border-radius: 14px;
 	}
 }
 
@@ -114,7 +115,7 @@
 	line-height: 110%;
 	background-color: #F7F7F7;
 	padding: 7px 11px;
-	border-radius: 8.1px;
+	border-radius: 11px;
 	cursor: pointer;
 
 	&.active {
