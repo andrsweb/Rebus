@@ -182,25 +182,32 @@
 		width: 100%;
 		position: absolute;
 		left: 0;
-		top: -70px;
+		top: -120px;
 		background-color: $bg;
 
 		&_item {
 			display: flex;
 			cursor: pointer;
 			margin-bottom: 10px;
+			padding: 13px 17px;
+			border-radius: 10px;
+
+			&:hover {
+				background-color: #414141;
+			}
+	
+			&:active {
+				background-color: #3A3A3A;
+			}
 
 			&:last-child {
 				margin-bottom: 0;
 			}
 
-			&:hover {
-				opacity: $op;
-			}
 		}
 
 		@media all and (min-width: $md) {
-			top: -80px;
+			top: -120px;
 		}
 	}
 
@@ -235,6 +242,14 @@
 .footer__docs {
 	.hidden__menu {
 		top: -70px;
+
+		&_item {
+			padding: 0;
+			
+			&:hover {
+				background-color: transparent;
+			}
+		}
 
 		@media all and (min-width: $md) {
 			top: -100px;
