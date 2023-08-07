@@ -188,7 +188,6 @@
 		&_item {
 			display: flex;
 			cursor: pointer;
-			margin-bottom: 10px;
 			padding: 13px 17px;
 			border-radius: 10px;
 
@@ -199,11 +198,6 @@
 			&:active {
 				background-color: #3A3A3A;
 			}
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
 		}
 
 		@media all and (min-width: $md) {
@@ -245,6 +239,11 @@
 
 		&_item {
 			padding: 0;
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 			
 			&:hover {
 				background-color: transparent;
