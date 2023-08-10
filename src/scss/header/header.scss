@@ -11,10 +11,6 @@
 		top: 26px;
 	}
 
-	@media all and (min-width: 1900px) {
-		top: 44px;
-	}
-
 	.container {
 		padding: 0 7px 0 12px;
 
@@ -52,10 +48,6 @@
 		position: relative;
 
 		@media all and (min-width: $md) {
-			padding: 8px 8px 8px 20px;
-		}
-
-		@media all and (min-width: 1400px) {
 			padding: 7px 7px 7px 13px;
 		}
 	}
