@@ -46,6 +46,7 @@
     "last 3 versions"
   ],
   "dependencies": {
-    "canvas-confetti": "^1.6.0"
+    "canvas-confetti": "^1.6.0",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

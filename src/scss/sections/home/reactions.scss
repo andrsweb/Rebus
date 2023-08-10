@@ -1,5 +1,6 @@
 .reactions {
 	padding: 39px 0;
+	position: relative;
 
 	@media all and (min-width: $md) {
 		padding: 60px 0;
@@ -133,4 +134,11 @@
 			font-size: 13.933px;
 		}
 	}
+}
+
+.hidden__anchor {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -50px;
 }

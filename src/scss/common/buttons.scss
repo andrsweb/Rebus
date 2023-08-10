@@ -235,18 +235,14 @@
 
 .footer__docs {
 	.hidden__menu {
-		top: -70px;
+		top: -85px;
 
 		&_item {
-			padding: 0;
+			padding: 3px;
 			margin-bottom: 10px;
 
 			&:last-child {
 				margin-bottom: 0;
-			}
-			
-			&:hover {
-				background-color: transparent;
 			}
 		}
 
