@@ -188,24 +188,44 @@
 					}
 
 					&.subcribers {
-						width: 413px;
+						width: 300px;
+
+						@media all and (min-width: 576px) {
+							width: 413px;
+						}
 					}
 
 					&.sends {
-						width: 346px;
+						width: 300px;
+
+						@media all and (min-width: 576px) {
+							width: 346px;
+						}
 					}
 
 					&.pay {
-						width: 383px;
+						width: 300px;
+
+						@media all and (min-width: 576px) {
+							width: 383px;
+						}
 					}
 
 					&.telega {
-						width: 346px;
+						width: 300px;
 						top: 60px;
+
+						@media all and (min-width: 576px) {
+							width: 346px;
+						}
 					}
 
 					&.hide {
-						width: 396px;
+						width: 300px;
+
+						@media all and (min-width: 576px) {
+							width: 396px;
+						}
 					}
 				}
 			}
