@@ -7,9 +7,14 @@
 
 	.container {
 		padding: 0;
+		max-width: 950px;
 
 		@media all and (min-width: $md) {
 			padding: 0 20px;
+		}
+
+		@media all and (min-width: 2560px) {
+			max-width: 1100px;
 		}
 	}
 
@@ -25,10 +30,10 @@
 		@media all and (min-width: $md) {
 			font-size: 24px;
 		}
-	}
 
-	.container {
-		max-width: 950px;
+		@media all and (min-width: 2560px) {
+			font-size: 29px;
+		}
 	}
 
 	&__items {
@@ -37,7 +42,7 @@
 		align-items: center;
 
 		@media all and (min-width: 1024px) {
-			align-items: flex-start;
+			align-items: center;
 		}
 	}
 
@@ -58,6 +63,11 @@
 			padding-left: 20px;
 			margin-bottom: 146px;
 		}
+
+		@media all and (min-width: 2500px) {
+			margin-bottom: 170px;
+		}
+
 
 		&:last-child {
 			margin-bottom: 0;
@@ -109,6 +119,10 @@
 			@media all and (min-width: $lg) {
 				font-size: 17px;
 			}
+
+			@media all and (min-width: 2560px) {
+				font-size: 20px;
+			}
 		}
 
 		&_link {
@@ -158,6 +172,12 @@
 			padding: 72px 72px 0 72px;
 			width: 456px;
 			height: 456px;
+		}
+
+		@media all and (min-width: 2560px) {
+			padding: 80px 80px 0 80px;
+			width: 525px;
+			height: 525px;
 		}
 
 		img {

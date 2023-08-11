@@ -101,6 +101,11 @@
 		font-size: 16px;
 		padding: 14.4px 26.4px;
 	}
+
+	@media all and (min-width: 2560px) {
+		font-size: 19px;
+		padding: 18px 33px;
+	}
 }
 
 .tab__button {
@@ -127,6 +132,11 @@
 	@media all and (min-width: $md) {
 		font-size: 15.3px;
 		padding: 10.8px 18px;
+	}
+
+	@media all and (min-width: 2560px) {
+		padding: 12px 20px;
+		font-size: 17px;
 	}
 }
 

@@ -23,6 +23,11 @@
 			font-size: 38px;
 			margin-bottom: 90px;
 		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 43px;
+			margin-bottom: 110px;
+		}
 	}
 
 	.dropdown {
@@ -92,6 +97,10 @@
 			@media all and (min-width: $xl) {
 				max-width: 617px;
 			}
+
+			@media all and (min-width: 2560px) {
+				font-size: 21px;
+			}
 		}
 
 		&-open {
@@ -116,6 +125,10 @@
 
 			@media all and (min-width: $md) {
 				font-size: 17px;
+			}
+
+			@media all and (min-width: 2560px) {
+				font-size: 19px;
 			}
 		}
 

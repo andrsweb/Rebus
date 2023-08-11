@@ -37,6 +37,10 @@ h1, .h1 {
 		font-size: 48px;
 		max-width: 100%;
 	}
+
+	@media all and (min-width: 2560px) {
+		font-size: 64px;
+	}
 }
 
 h2, .h2 {

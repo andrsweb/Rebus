@@ -27,6 +27,10 @@
 		@media all and (min-width: $md) {
 			margin-bottom: 20px;
 		}
+
+		@media all and (min-width: 2500px) {
+			margin-bottom: 32px;
+		}
 	}
 
 	&__item {
@@ -39,6 +43,10 @@
 
 		@media all and (min-width: $md) {
 			padding: 11.4px 14px;
+		}
+
+		@media all and (min-width: 2560px) {
+			padding: 14px 22px;
 		}
 
 			#my-canvas {
@@ -103,6 +111,11 @@
 		@media all and (min-width: $lg) {
 			font-size: 17px;
 		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 20px;
+			max-width: 596px;
+		}
 	}
 
 	&__img {
@@ -132,6 +145,10 @@
 
 		@media all and (min-width: $md) {
 			font-size: 13.933px;
+		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 16px;
 		}
 	}
 }
