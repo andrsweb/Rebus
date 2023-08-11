@@ -9,14 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const callConfetti = () => {
 	const buttons = document.querySelectorAll('.reactions__item')
 	let canvas = document.createElement('canvas')
-	canvas.setAttribute('id', 'my-canvas')
+	canvas.setAttribute('id', 'my-canvas') //Create canvas with id "my-canvas"
 	canvas.confetti = canvas.confetti || confetti.create(canvas, { resize: true })
-
-	canvas.confetti({
-		spread: 70,
-		particleCount: 350,
-		origin: { y: 1.2 }
-	})
 
 	if (!buttons.length) return
 
@@ -28,8 +22,11 @@ const callConfetti = () => {
 			if (!button.classList.contains('active')) {
 				button.classList.add('active')
 				reactionsValue.textContent = ++num
-				canvas.confetti()
-				button.appendChild(canvas)
+				button.appendChild(canvas)  //Insert a previously created canvas into the current button
+				canvas.confetti({  //Init canvas confetti with user settings
+					spread: 70,
+					particleCount: 150
+				})
 			} else {
 				button.classList.remove('active')
 				reactionsValue.textContent = --num

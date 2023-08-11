@@ -11,7 +11,7 @@ const toogleDropdown = () => {
 
 	dropdowns.forEach(dropdown => {
 		if (dropdown.classList.contains('opened'))
-			reCalculateDropdownHeight(dropdown)
+			reCalculateDropdownHeight(dropdown) //Call recalculate function
 	})
 
 	dropdowns.forEach(dropdown => {
@@ -20,17 +20,17 @@ const toogleDropdown = () => {
 
 			if (!dropdown.classList.contains('opened')) {
 				dropdown.classList.add('opened')
-				reCalculateDropdownHeight(dropdown)
+				reCalculateDropdownHeight(dropdown) //Call recalculate function
 			}
 			else {
 				dropdown.classList.remove('opened')
-				dropdownOpen.style.height = '0'
+				dropdownOpen.style.height = '0' //Set dropdown height
 			}
 		})
 	})
 }
 
-window.addEventListener('resize', () => {
+window.addEventListener('resize', () => {     //If resize -- recalculate dropdown height
 	const dropdowns = document.querySelectorAll('.dropdown.opened')
 
 	if (!dropdowns.length) return
