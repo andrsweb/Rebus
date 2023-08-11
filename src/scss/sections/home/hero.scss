@@ -2,7 +2,7 @@
 	padding: 71px 0 117px;
 
 	@media all and (min-width: $md) {
-		padding:15.23vw 0 7.81vw;
+		padding: 15.23vw 0 7.81vw;
 
 		@media all and (min-height: 220px) {
 			padding-top: 50vh
@@ -11,33 +11,33 @@
 		@media all and (min-height: 320px) {
 			padding-top: 25vh
 		}
-	
+
 		@media all and (min-height: 420px) {
 			padding-top: 30vh
 		}
-	
+
 		@media all and (min-height: 480px) {
-			padding:15.23vw 0 7.81vw;
+			padding: 15.23vw 0 7.81vw;
 		}
 	}
 
 	@media all and (min-width: 1024px) {
-		padding:16.11vw 0 11.43vw;
+		padding: 16.11vw 0 11.43vw;
 
 		@media all and (min-height: 220px) {
 			padding-top: 50vh
 		}
-		
+
 		@media all and (min-height: 320px) {
 			padding-top: 25vh
 		}
-	
+
 		@media all and (min-height: 420px) {
 			padding-top: 30vh
 		}
-	
+
 		@media all and (min-height: 480px) {
-			padding:16.11vw 0 11.43vw;
+			padding: 16.11vw 0 11.43vw;
 		}
 	}
 
@@ -51,18 +51,18 @@
 		@media all and (min-height: 320px) {
 			padding-top: 25vh
 		}
-	
+
 		@media all and (min-height: 420px) {
 			padding-top: 30vh
 		}
-	
+
 		@media all and (min-height: 480px) {
 			padding: 132px 0 117px;
 		}
 	}
 
 	@media all and (min-width: 1900px) {
-		padding:9.17vw 0 8.13vw; 
+		padding: 9.17vw 0 8.13vw;
 
 		@media all and (min-height: 220px) {
 			padding-top: 50vh
@@ -71,13 +71,13 @@
 		@media all and (min-height: 320px) {
 			padding-top: 40vh
 		}
-	
+
 		@media all and (min-height: 420px) {
 			padding-top: 30vh
 		}
-	
+
 		@media all and (min-height: 480px) {
-			padding:9.17vw 0 8.13vw; 
+			padding: 9.17vw 0 8.13vw;
 		}
 	}
 
@@ -88,14 +88,18 @@
 	&__subtitle {
 		color: $dark;
 		font-family: $ff;
-		font-size: 15px;
+		font-size: 3.13vw;
+		;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		text-align: center;
 
-		@media all and (min-width: $md) {
+		@media all and (min-width: $sm) {
 			font-size: 16px;
+		}
+
+		@media all and (min-width: $md) {
 			line-height: 230%;
 			text-align: left;
 		}
@@ -119,9 +123,13 @@
 
 	&__info {
 		width: 100%;
-		max-width: 470px;
+		max-width: 97.92vw;
 		display: flex;
 		flex-direction: column;
+
+		@media all and (min-width: $sm) {
+			max-width: 470px;
+		}
 
 		@media all and (min-width: 1024px) {
 			padding-left: 20px;
@@ -140,10 +148,16 @@
 		display: flex;
 		justify-content: flex-end;
 		height: 90vh;
-		max-width: 260px;
-		min-height: 300px;
-		max-height: 543px;
+		max-width: 54.17vw;
+		min-height: 62.5vw;
+		max-height: 113.13vw;
 		position: relative;
+
+		@media all and (min-width: $sm) {
+			max-width: 260px;
+			min-height: 300px;
+			max-height: 543px;
+		}
 
 		@media all and (min-width: $md) {
 			max-width: 21.48vw;
@@ -195,20 +209,26 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 99px;
-		height: 36px;
+		width: 20.63vw;
+		height: 7.5vw;
 		border-radius: 12px;
 		background-color: #EEF0FA;
 		color: $dark;
 		text-align: right;
 		font-family: $ff;
-		font-size: 13px;
+		font-size: 2.71vw;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		transform: rotate(-1.726deg);
 		margin-left: 10px;
 		margin-bottom: 5px;
+
+		@media all and (min-width: $sm) {
+			width: 99px;
+			height: 36px;
+			font-size: 13px;
+		}
 
 		@media all and (min-width: $md) {
 			font-size: 15px;
@@ -228,9 +248,14 @@
 	&__buttons {
 		display: flex;
 		align-items: center;
-		margin-top: 31px;
-		margin-bottom: 41px;
+		margin-top: 6.46vw;
+		margin-bottom: 8.54vw;
 		flex-direction: column;
+
+		@media all and (min-width: $sm) {
+			margin-top: 31px;
+			margin-bottom: 41px;
+		}
 
 		@media all and (min-width: $md) {
 			margin-top: 50px;
@@ -243,8 +268,16 @@
 		}
 
 		.button {
-			margin-bottom: 15px;
+			margin-bottom: 3.13vw;
 			font-weight: 500;
+			padding: 2.5vw 5vw;
+			font-size: 2.92vw;
+
+			@media all and (min-width: $sm) {
+				margin-bottom: 15px;
+				padding: 12px 24px;
+				font-size: 14px;
+			}
 
 			@media all and (min-width: $md) {
 				margin-right: 28px;
@@ -262,11 +295,15 @@
 		color: $link;
 		text-align: right;
 		font-family: $ff;
-		font-size: 14px;
+		font-size: 2.92vw;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		text-decoration-line: underline;
+
+		@media all and (min-width: $sm) {
+			font-size: 14px;
+		}
 
 		@media all and (min-width: $md) {
 			font-size: 16px;

@@ -12,13 +12,19 @@ h6, .h6 {
 
 h1, .h1 {
 	color: #14191F;
-	font-family: Gogh;
-	font-size: 32px;
+	font-family: $ff;
+	font-size:6.67vw; 
+	margin-bottom:2.6vw; 
 	font-style: normal;
 	font-weight: 800;
 	line-height: 130%;
-	margin-bottom: 12.5px;
 	text-align: center;
+
+	@media all and (min-width: $sm) {
+		font-size: 32px;
+		line-height: 130%;
+		margin-bottom: 12.5px;
+	}
 
 	@media all and (min-width: $md) {
 		text-align: left;
