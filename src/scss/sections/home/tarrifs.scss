@@ -11,10 +11,6 @@
 		@media all and (min-width: $xl) {
 			padding: 0;
 		}
-
-		@media all and (min-width: $xxl) {
-			padding: 0 20px;
-		}
 	}
 
 	.h2 {
@@ -67,7 +63,8 @@
 			align-items: flex-start;
 			margin: 0 12px;
 			justify-content: center;
-			padding: 0 8%		}
+			padding: 0 8%
+		}
 
 		@media all and (min-width: 1024px) {
 			padding: 0 18%;
@@ -130,6 +127,7 @@
 			font-weight: $fw-regular;
 			line-height: 27px;
 			margin-bottom: 5px;
+			position: relative;
 
 			@media all and (min-width: $md) {
 				margin-bottom: 8px;
@@ -158,6 +156,58 @@
 
 			.last__img {
 				margin-left: 9px;
+				cursor: pointer;
+
+				.clue {
+					position: absolute;
+					top: 32px;
+					left: -50px;
+					display: none;
+					font-family: Gogh;
+					font-size: 17px;
+					font-weight: 400;
+					line-height: 23px;
+					letter-spacing: 0em;
+					text-align: left;
+					background-color: $bg;
+					color: $white;
+					padding: 20px;
+					border-radius: 20px;
+					z-index: 10;
+					
+					&.clicked {
+						display: block;
+					}
+
+					&__link {
+						color: $link;
+
+						&:hover {
+							color: $accent;
+						}
+					}
+
+					&.subcribers {
+						width: 413px;
+					}
+
+					&.sends {
+						width: 346px;
+					}
+
+					&.pay {
+						width: 383px;
+					}
+
+					&.telega {
+						width: 346px;
+						top: 60px;
+					}
+
+					&.hide {
+						width: 396px;
+					}
+				}
 			}
 		}
 
@@ -177,10 +227,8 @@
 		width: 100%;
 		max-width: 285px;
 		position: relative;
-		z-index: 2;
-		overflow: hidden;
 		padding: 10px 20px 25px 16px;
-	
+
 		@media all and (min-width: $md) {
 			padding: 0 12px;
 			width: calc(100% / 2);
@@ -195,12 +243,10 @@
 		@media all and (min-width: $xl) {
 			width: calc(100% / 4);
 			max-width: 100%;
-		
 			margin-bottom: 0;
 		}
 
 		.tab__item_inner {
-			position: relative;
 			display: flex;
 			flex-direction: column;
 			padding: 23px;
@@ -208,30 +254,36 @@
 			height: 100%;
 			background-color: #F7F7F7;
 			border-radius: 25.2px;
-			overflow: hidden;
+			position: relative;
+		}
+	}
 
-			&.popular {
-				position: relative;
+	.tarrif__heading {
+		position: relative;
+		overflow: hidden;
+		margin: -22px;
+		padding: 22px;
+		pointer-events: none;
 
-				&::after {
-					content: 'Популярный';
-					position: absolute;
-					right: -37px;
-					top: 28px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					background-color: #DCFFDB;
-					width: 150.871px;
-					height: 24.731px;
-					color: #10B302;
-					font-family: $ff;
-					font-size: 12.6px;
-					font-style: normal;
-					font-weight: $fw-regular;
-					line-height: normal;
-					transform: rotate(45deg);
-				}
+		&.popular {
+			&::after {
+				content: 'Популярный';
+				position: absolute;
+				right: -37px;
+				top: 28px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #DCFFDB;
+				width: 150.871px;
+				height: 24.731px;
+				color: #10B302;
+				font-family: $ff;
+				font-size: 12.6px;
+				font-style: normal;
+				font-weight: $fw-regular;
+				line-height: normal;
+				transform: rotate(45deg);
 			}
 		}
 	}

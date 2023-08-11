@@ -14,7 +14,7 @@ const callConfetti = () => {
 
 	canvas.confetti({
 		spread: 70,
-		particleCount: 150,
+		particleCount: 350,
 		origin: { y: 1.2 }
 	})
 
