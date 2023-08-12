@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const showHiddenClues = () => {
 	const buttons = document.querySelectorAll('.last__img')
-	const clues   = document.querySelectorAll('.clue .clicked')
+	const clues   = document.querySelectorAll('.clue')
 	if (!buttons.length) return
 
 	buttons.forEach(button => {
@@ -29,4 +29,18 @@ const showHiddenClues = () => {
 			clue.classList.add('clicked')
 		})
 	})
+
+	document.addEventListener( 'click', e => {  // Close clues by tap or click anywhere
+		e.stopPropagation()
+		target = e.target
+
+		if (
+			! target.className ||
+			target.classList.contains( 'help' )
+		) return
+
+		clues.forEach(clue => {
+			clue.classList.remove( 'clicked' )
+		})
+	} )
 }

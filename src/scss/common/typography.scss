@@ -13,12 +13,16 @@ h6, .h6 {
 h1, .h1 {
 	color: #14191F;
 	font-family: $ff;
-	font-size:6.67vw; 
-	margin-bottom:2.6vw; 
+	font-size: 28px; 
+	margin-bottom: 11px; 
 	font-style: normal;
 	font-weight: 800;
 	line-height: 130%;
 	text-align: center;
+
+	@media all and (min-width: 360px) {
+		font-size: 32px; 
+	}
 
 	@media all and (min-width: $sm) {
 		font-size: 32px;
