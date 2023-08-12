@@ -190,8 +190,9 @@
 		padding: 10px;
 		width: 100%;
 		position: absolute;
-		left: 0;
+		left: 50%;
 		top: -120px;
+		transform: translateX(-50%);
 		background-color: $bg;
 
 		&_item {
@@ -244,10 +245,11 @@
 
 .footer__docs {
 	.hidden__menu {
-		top: -85px;
+		top: -130px;
+		width: 230px;
 
 		&_item {
-			padding: 3px;
+			padding: 13px 17px;
 			margin-bottom: 10px;
 
 			&:last-child {
@@ -256,7 +258,7 @@
 		}
 
 		@media all and (min-width: $md) {
-			top: -100px;
+			top: -130px;
 		}
 	}
 
@@ -269,10 +271,10 @@
 		font-weight: $fw-medium;
 		line-height: normal; 
 		text-align: left;
+		text-decoration: none;
 
 		&:hover {
 			opacity: 1;
-			color: $accent;
 		}
 	}
 }
