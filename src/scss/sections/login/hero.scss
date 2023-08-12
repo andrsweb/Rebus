@@ -16,21 +16,41 @@
 		color: $black;
 		text-align: center;
 		font-family: $ff;
-		font-size: 32px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: 120%;
-		margin-bottom: 22px;
+		margin-bottom: 18px;
+
+		@media all and (min-width: $md) {
+			font-size: 32px;
+			margin-bottom: 22px;
+		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 36px;
+			margin-bottom: 24px;
+		}
 	}
 
 	&_take-code {
 		color: $dark;
 		font-family: $ff;
-		font-size: 17px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: 160%;
-		margin-bottom: 45px;
+		margin-bottom: 25px;
+
+		@media all and (min-width: $md) {
+			font-size: 17px;
+			margin-bottom: 45px;
+		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 20px;
+			margin-bottom: 50px;
+		}
 
 		a {
 			color: $link;
@@ -41,11 +61,19 @@
 	&_notification {
 		color: $dark;
 		font-family: $ff;
-		font-size: 14px;
+		font-size: 12px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: 160%;
 		margin-top: 11px;
+
+		@media all and (min-width: $md) {
+			font-size: 14px;
+		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 15px;
+		}
 
 		&.error {
 			color: #FE3268;
@@ -57,7 +85,15 @@
 	}
 
 	.login__button {
-		margin-top: 32px;
+		margin-top: 25px;
+
+		@media all and (min-width: $md) {
+			margin-top: 32px;
+		}
+
+		@media all and (min-width: 2560px) {
+			margin-top: 35px;
+		}
 	}
 }
 
@@ -67,26 +103,42 @@
 	flex-direction: column;
 
 	&__digits {
-		--total-digits: 4;
-		display: grid;
-		grid-template-columns: repeat(var(--total-digits), 1fr);
-		gap: 0.5rem;
+		display: flex;
 	}
+
 	&__digit {
 		display: block;
-		width: 50px;
-		height: 54px;
-		padding: 0.625rem;
+		width: 40px;
+		height: 44px;
 		border-radius: 8px;
 		border: 1px solid #C1CBD7;
 		background: $white; 
 		color: $black;
 		font-family: $ff;
-		font-size: 25px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal; 
 		text-align: center;
+		margin-right: 7px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@media all and (min-width: $md) {
+			width: 50px;
+			height: 54px;
+			font-size: 25px;
+			margin-right: 8.5px;
+		}
+
+		@media all and (min-width: 2560px) {
+			width: 55px;
+			height: 60px;
+			font-size: 28px;
+			margin-right: 10px;
+		}
 
 		&:focus {
 			border: 2px solid #219EFB; 
