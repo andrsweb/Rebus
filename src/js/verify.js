@@ -78,7 +78,7 @@ const TwoFactorAuth = () => {
 			const submitButton = document.createElement("button")
 			submitButton.classList.add("login__button")
 			submitButton.type = "submit"
-			submitButton.textContent = "Submit"
+			submitButton.textContent = "Войти"
 			return submitButton
 		}
 	
