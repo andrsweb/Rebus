@@ -9,9 +9,11 @@ const toogleBurgerMenu = () => {
 	const burgerButton = document.querySelector('.burger__button')
 	const headerMenu = document.querySelector('.header__nav')
 
+	if(!burgerButton) return
+
 	burgerButton.addEventListener('click', () => {
 
-		if (!burgerButton && !headerWrapper) return
+		if (!headerWrapper) return
 
 		if (!headerMenu.classList.contains('opened')) {
 			headerMenu.classList.add('opened')
@@ -54,8 +56,10 @@ document.addEventListener('scroll', () => {
 
 	if (!header) return
 
-	if(hero.getBoundingClientRect().bottom  <= 0  ) {
-		header.classList.add('scrolled')
+	if(hero) {
+		if(hero.getBoundingClientRect().bottom  <= 0  ) {
+			header.classList.add('scrolled')
+		}
 	}
 
 	const scrollTop = window.scrollY
