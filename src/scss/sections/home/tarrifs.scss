@@ -169,7 +169,7 @@
 
 			span {
 				font-weight: $fw-bold;
-				margin-right: 2px;
+				margin-right: 5px;
 			}
 
 			&.disabled {
@@ -190,7 +190,7 @@
 					left: -50px;
 					display: none;
 					font-family: Gogh;
-					font-size: 17px;
+					font-size: 14px;
 					font-weight: 400;
 					line-height: 23px;
 					letter-spacing: 0em;
@@ -200,6 +200,11 @@
 					padding: 20px;
 					border-radius: 20px;
 					z-index: 10;
+
+					@media all and (min-width: $md) {
+						max-width: 454px;
+						font-size: 16px;
+					}
 					
 					&.clicked {
 						display: block;
