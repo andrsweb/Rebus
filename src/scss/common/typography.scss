@@ -20,14 +20,15 @@ h1, .h1 {
 	line-height: 130%;
 	text-align: center;
 
-	@media all and (min-width: 360px) {
-		font-size: 32px; 
+	@media all and (min-width: 380px) {
+		padding: 0 10px;
 	}
 
 	@media all and (min-width: $sm) {
 		font-size: 32px;
 		line-height: 130%;
 		margin-bottom: 12.5px;
+		padding: 0;
 	}
 
 	@media all and (min-width: $md) {

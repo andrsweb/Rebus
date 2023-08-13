@@ -319,11 +319,13 @@
 		margin-left: 10px;
 		margin-bottom: 5px;
 
-		@media all and (min-width: 360px) {
-			font-size: 13px;
+		@media all and (min-width: 380px) {
+			max-width: 129px;
+			max-height: 44px;
 		}
 
 		@media all and (min-width: $sm) {
+			font-size: 13px;
 			width: 99px;
 			height: 36px;
 			max-width: none;
@@ -376,12 +378,18 @@
 
 		.button {
 			font-weight: 500;
-			margin-bottom: 10px;
-			padding: 10px 20px;
-			font-size: 12px;
+			margin-bottom: 2.08vw;
+			padding: 3.5vw 8.17vw;
+			font-size: 3.5vw;
 			border-radius: 24px;
 
 			@media all and (min-width: 360px) {
+				margin-bottom: 3.13vw;
+				padding: 3.5vw 7vw;
+				font-size: 3.92vw;
+			}
+
+			@media all and (min-width: $sm) {
 				margin-bottom: 15px;
 				padding: 12px 24px;
 				font-size: 14px;

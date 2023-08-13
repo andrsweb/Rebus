@@ -10,8 +10,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding-bottom: 10%;
-		padding: 0 22px;
+		padding: 0 22px 10% 22px;
 	}
 
 	&_title {
@@ -178,7 +177,7 @@ input[type="number"] {
 	-moz-appearance: textfield;
 }
 
-nput:not([type=checkbox]):not([type=radio]) {
+input:not([type=checkbox]):not([type=radio]) {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
