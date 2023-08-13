@@ -29,6 +29,11 @@
 		padding: 9px 13px;
 		border-radius: 11px;
 	}
+
+	@media all and (min-width: 2560px) {
+		font-size: 17px;
+		padding: 11px 14px;
+	}
 }
 
 .header__button_white {
@@ -72,6 +77,12 @@
 		padding: 9px 16px;
 		max-width: 173px;
 		border-radius: 14px;
+	}
+
+	@media all and (min-width: 2560px) {
+		font-size: 17px;
+		padding: 11px 18px;
+		max-width: 196px;
 	}
 }
 
@@ -121,6 +132,7 @@
 	padding: 7px 11px;
 	border-radius: 11px;
 	cursor: pointer;
+	white-space: nowrap;
 
 	&.active {
 		background: #FFF;
@@ -154,7 +166,7 @@
 	border: 0;
 	background-color: #414141;
 	padding: 9px 16px;
-	border-radius: 10px;
+	border-radius: 9px;
 	cursor: pointer;
 	position: relative;
 
@@ -177,6 +189,11 @@
 	@media all and (min-width: $md) {
 		font-size: 15px;
 		background-color: transparent;
+		border-radius: 14px;
+	}
+
+	@media all and (min-width: 2560px) {
+		font-size: 17px;
 	}
 }
 
@@ -280,6 +297,7 @@
 }
 
 .footer__button {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -293,7 +311,7 @@
 	font-style: normal;
 	font-weight: $fw-medium;
 	line-height: normal;
-	border-radius: 14px;
+	border-radius: 9px;
 	cursor: pointer;
 
 	&:hover {
@@ -316,6 +334,12 @@
 	@media all and (min-width: $md) {
 		margin-left: 7px;
 		font-size: 15px;
+		border-radius: 14px;
+		width: auto;
+	}
+
+	@media all and (min-width: 2560px) {
+		font-size: 17px;
 	}
 }
 

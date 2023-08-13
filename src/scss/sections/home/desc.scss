@@ -89,16 +89,20 @@
 
 		&_info {
 			max-width: 380px;
-			margin-top: 20px;
+			padding-top: 20px;
 			padding-left: 28px;
 
 			@media all and (min-width: $md) {
-				padding: 0;
+				padding-left: 0;
 				margin-left: 20px;
 			}
 
 			@media all and (min-width: 1024px) {
 				margin-left: 54px;
+			}
+
+			@media all and (min-width: 2560px) {
+				max-width: 454px;
 			}
 		}
 
@@ -122,6 +126,7 @@
 
 			@media all and (min-width: 2560px) {
 				font-size: 20px;
+				max-width: 454px;
 			}
 		}
 
@@ -136,6 +141,10 @@
 
 			@media all and (min-width: $md) {
 				font-size: 17px;
+			}
+
+			@media all and (min-width: 2560px) {
+				font-size: 20px;
 			}
 		}
 

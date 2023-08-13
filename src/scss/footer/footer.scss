@@ -35,6 +35,10 @@
 			order: 1;
 			margin-top: 0;
 		}
+
+		@media all and (min-width: 2560px) {
+			font-size: 17px;
+		}
 	}
 
 	&__ui {
@@ -65,8 +69,6 @@
 
 		.footer__button {
 			order: 1;
-			@media all and (min-width: $md) {
-			}
 		}
 
 		.footer__lang  {

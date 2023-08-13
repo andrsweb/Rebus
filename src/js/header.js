@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	toogleBurgerMenu()
 })
 
-
 const toogleBurgerMenu = () => {
 	const burgerButton = document.querySelector('.burger__button')
 	const headerMenu = document.querySelector('.header__nav')
@@ -12,8 +11,6 @@ const toogleBurgerMenu = () => {
 	if(!burgerButton) return
 
 	burgerButton.addEventListener('click', () => {
-
-		if (!headerWrapper) return
 
 		if (!headerMenu.classList.contains('opened')) {
 			headerMenu.classList.add('opened')
