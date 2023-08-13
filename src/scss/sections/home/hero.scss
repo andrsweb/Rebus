@@ -284,14 +284,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 20.63vw;
-		height: 7.5vw;
+		width: 27.63vw;
+		height: 9.5vw;
+		max-width: 99px;
+		max-height: 36px;
 		border-radius: 12px;
 		background-color: #EEF0FA;
 		color: $dark;
 		text-align: right;
 		font-family: $ff;
-		font-size: 2.71vw;
+		font-size: 3.5vw;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
@@ -299,10 +301,15 @@
 		margin-left: 10px;
 		margin-bottom: 5px;
 
+		@media all and (min-width: 360px) {
+			font-size: 13px;
+		}
+
 		@media all and (min-width: $sm) {
 			width: 99px;
 			height: 36px;
-			font-size: 13px;
+			max-width: none;
+			max-height: none;
 		}
 
 		@media all and (min-width: $md) {
