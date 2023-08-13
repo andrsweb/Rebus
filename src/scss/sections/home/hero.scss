@@ -90,6 +90,12 @@
 		max-height: 154.3vw;
 		position: relative;
 
+		@media all and (min-width: 361px) {
+			max-width: 316px;
+			min-height: 401px;
+			max-height: 661px;
+		}
+
 		@media all and (min-width: $md) {
 			max-width: 220px;
 			min-height: 250px;
