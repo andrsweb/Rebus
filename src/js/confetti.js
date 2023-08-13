@@ -15,6 +15,8 @@ const callConfetti = () => {
 	if (!buttons.length) return
 
 	buttons.forEach(button => {
+		buttons.disabled = true
+
 		button.addEventListener('click', () => {
 			const reactionsValue = button.querySelector('.reactions__value')
 			let num = button.querySelector('.reactions__value').textContent
@@ -26,6 +28,13 @@ const callConfetti = () => {
 				canvas.confetti({  //Init canvas confetti with user settings
 					spread: 70,
 					particleCount: 150
+				})
+				buttons.forEach(button => {
+					button.disabled = true
+
+					setTimeout(() => {
+						button.disabled = false
+					}, 3500);
 				})
 			} else {
 				button.classList.remove('active')
