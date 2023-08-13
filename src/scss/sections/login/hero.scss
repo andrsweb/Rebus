@@ -18,11 +18,15 @@
 		color: $black;
 		text-align: center;
 		font-family: $ff;
-		font-size: 20px;
+		font-size: 6.25vw;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: 120%;
 		margin-bottom: 18px;
+
+		@media all and (min-width: $sm) {
+			font-size: 30px;
+		}
 
 		@media all and (min-width: $md) {
 			font-size: 32px;
@@ -43,6 +47,11 @@
 		font-weight: $fw-regular;
 		line-height: 160%;
 		margin-bottom: 25px;
+
+		@media all and (min-width: $sm) {
+			font-size: 16px;
+			margin-bottom: 35px;
+		}
 
 		@media all and (min-width: $md) {
 			font-size: 17px;
@@ -67,6 +76,10 @@
 		font-weight: $fw-regular;
 		line-height: 160%;
 		margin-top: 11px;
+
+		@media all and (min-width: $sm) {
+			font-size: 13px;
+		}
 
 		@media all and (min-width: $md) {
 			font-size: 14px;
@@ -109,8 +122,12 @@
 
 	&__digit {
 		display: block;
-		width: 40px;
-		height: 44px;
+		width: 12.33vw;
+		height: 12vw;
+		min-width: 40px;
+		min-height: 44px;
+		max-width: 50px;
+		max-height: 54px;
 		border-radius: 8px;
 		border: 1px solid #C1CBD7;
 		background: $white;
@@ -161,8 +178,8 @@ input[type="number"] {
 	-moz-appearance: textfield;
 }
 
-nput:not([type=checkbox]):not([type=radio]){ 
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    appearance: none;
+nput:not([type=checkbox]):not([type=radio]) {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }

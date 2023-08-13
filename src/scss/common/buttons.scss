@@ -426,6 +426,10 @@
 	background: #4C6FFF;
 	cursor: pointer;
 
+	@media all and (min-width: $sm) {
+		font-size: 15px;
+	}
+
 	@media all and (min-width: $md) {
 		font-size: 16px;
 		padding: 15px 40px;
